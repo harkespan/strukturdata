@@ -1,0 +1,2 @@
+# strukturdata
+Coding struktur data
