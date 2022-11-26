@@ -1,3 +1,11 @@
+/**
+  * author          : harkespan
+  * created date    : Nov, 25th 2022
+  * version         : 1.0
+  * description     : data structure code to create non circular single linked list
+*/
+
+
 #include<iostream>
 #include<stdlib.h>
 
