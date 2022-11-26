@@ -121,7 +121,7 @@ void hapusBelakang(){
         cout<<"Tidak dapat menghapus tail karena list masih kosong"<<endl;
     }
     else{
-        if(isSingleNode){
+        if(isSingleNode()){
             head = NULL;
         }
         else{
@@ -133,7 +133,7 @@ void hapusBelakang(){
 
             hapus = tail;
             tail = current;
-            tail->next = NULL;
+            hapus->next = NULL;
             delete hapus;
         }
         cout<<"Berhasil menghapus data paling belakang"<<endl;
@@ -220,9 +220,6 @@ int main(){
         aksi(pilih);
     }
     while(pilih!=0);
-
-    tambahDepan(newData);
-    cetak();
     return 0;
 }
 
