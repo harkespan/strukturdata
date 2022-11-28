@@ -179,7 +179,7 @@ Barang *inputData()
     cout<<"Id barang: ";
     cin>>newData->idBarang;
     cout<<"Nama barang: ";
-    cin>>newData->namaBarang;
+    getline(cin>>ws, newData->namaBarang);
     cout<<"Stok: ";
     cin>>newData->stok;
     cout<<"Harga: Rp ";
