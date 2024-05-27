@@ -14,12 +14,35 @@ struct Barang{
 
 Barang *newData, *head = NULL, *top = NULL;
 
+bool isEmpty(){
+    if(head == NULL){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
 void cetak(){
     if(isEmpty()){
         cout<<"List masih kosong"<<endl;
     }
     else{
-        
+        system("CLS");
+        cout<<"Data Barang :"<<endl;
+        cout<<"-------------"<<endl;
+        current  = head;
+        int i = 1;
+        while(current!=NULL){
+            cout<<"Barang ke-"<<i<<endl;
+            cout<<"Id Barang: "<<current->idBarang<<endl;
+            cout<<"Nama Barang: "<<current->namaBarang<<endl;
+            cout<<"Stok: "<<current->stok<<endl;
+            cout<<"Harga: Rp "<<current->harga<<",00"<<endl;
+
+            current = current->next;
+            i++;
+        }
     }
 }
 
