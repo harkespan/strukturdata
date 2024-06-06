@@ -141,7 +141,7 @@ void hapusBelakang(){
 
             hapus = tail;
             tail = current;
-            hapus->next = NULL;
+            current->next = NULL;
             delete hapus;
         }
         cout<<"Berhasil menghapus data paling belakang"<<endl;
